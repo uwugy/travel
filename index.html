@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <title>Tourism</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="/styles/aos.css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="script" type="script/js" href="script.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo">LOGO</div>
+        <nav>
+          <a href="#top" class="btn btn-2">Home</a>
+          <a href="#city-tur" class="btn btn-2">Destinations</a>
+          <a href="#tur" class="btn btn-2">Tours</a>
+          <a href="#com" class="btn btn-2">Advantages</a>
+          <a href="#sms" class="btn btn-2">Contacts</a>
+        </nav>
+      </div>
+    </header>
+    <main id="top">
+      <section class="toptur">
+        <div>
+          <h1 class="topturtextH1" data-aos="fade-right">
+            Popular Destinations
+          </h1>
+          <h1 class="GuidertextH1" data-aos="fade-left">Tour Guides</h1>
+        </div>
+        <div class="top-guide-img">
+          <div data-aos="fade-right">
+            <img
+              class="imgtop imgtop1"
+              src="/img/Снимок экрана 2024-06-22 210233.png"
+            />
+          </div>
+          <div class="Guide" data-aos="fade-left">
+            <div class="Guidepos" id="man1Button" id="toggleButton">
+              <h1 class="GuideNom">1</h1>
+              <img
+                class="GuideMen"
+                src="/image/191-1915006_psychotherapy-clipart-1280x1287.png"
+              />
+              <div class="GuideText">
+                <h1 class="GuideName">Ivan Petrov</h1>
+                <a class="GuideDet">10 years of experience</a>
+              </div>
+            </div>
+            <div class="Guidepos" id="man2Button">
+              <h1 class="GuideNom">2</h1>
+              <img
+                class="GuideMen"
+                src="/image/191-1915006_psychotherapy-clipart-1280x1287.png"
+              />
+              <div class="GuideText">
+                <h1 class="GuideName">Anna Smirnova</h1>
+                <a class="GuideDet yy">5 years of experience</a>
+              </div>
+            </div>
+            <div class="Guidepos" id="man3Button">
+              <h1 class="GuideNom">3</h1>
+              <img
+                class="GuideMen"
+                src="/image/191-1915006_psychotherapy-clipart-1280x1287.png"
+              />
+              <div class="GuideText">
+                <h1 class="GuideName">Dmitry Ivanov</h1>
+                <a class="GuideDet yy">15 years of experience</a>
+              </div>
+            </div>
+            <div class="Guidepos" id="man4Button">
+              <h1 class="GuideNom">4</h1>
+              <img
+                class="GuideMen"
+                src="/image/191-1915006_psychotherapy-clipart-1280x1287.png"
+              />
+              <div class="GuideText">
+                <h1 class="GuideName">Elena Vasilieva</h1>
+                <a class="GuideDet yy">7 years of experience</a>
+              </div>
+            </div>
+            <div class="Guidepos" id="man5Button">
+              <h1 class="GuideNom">5</h1>
+              <img
+                class="GuideMen"
+                src="/image/191-1915006_psychotherapy-clipart-1280x1287.png"
+              />
+              <div class="GuideText">
+                <h1 class="GuideName">Mikhail Kuznetsov</h1>
+                <a class="GuideDet yy">12 years of experience</a>
+              </div>
+            </div>
+            <div class="Guidepos" id="man6Button">
+              <h1 class="GuideNom">6</h1>
+              <img
+                class="GuideMen"
+                src="/image/191-1915006_psychotherapy-clipart-1280x1287.png"
+              />
+              <div class="GuideText">
+                <h1 class="GuideName">Olga Sokolova</h1>
+                <a class="GuideDet">8 years of experience</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="line-container" id="city-tur" data-aos="fade-up">
+        <div class="line-line l-l"></div>
+        <h1 class="citytextH1">Destinations</h1>
+        <div class="line-line l-r"></div>
+      </div>
+      <section class="topcity" data-aos="fade-up">
+        <ul class="list">
+          <li class="city list_item" data-id="all">
+            <a class="citytext" data-id="all">All</a>
+            <img
+              src="/img/мирБез имени-1.png"
+              alt="All"
+              class="city_image"
+              data-id="all"
+            />
+          </li>
+          <li class="city list_item" data-id="France">
+            <a class="citytext" data-id="France">France</a>
+            <img
+              src="/img/францияБез имени-1.png"
+              alt="France"
+              class="city_image"
+              data-id="France"
+            />
+          </li>
+          <li class="city list_item" data-id="USA">
+            <a class="citytext" data-id="USA">USA</a>
+            <img
+              src="/img/сшаБез имени-1.png"
+              alt="USA"
+              class="city_image"
+              data-id="USA"
+            />
+          </li>
+          <li class="city list_item" data-id="Italy">
+            <a class="citytext" data-id="Italy">Italy</a>
+            <img
+              src="/img/италияБез имени-1.png"
+              alt="Italy"
+              class="city_image"
+              data-id="Italy"
+            />
+          </li>
+          <li class="city list_item" data-id="China">
+            <a class="citytext" data-id="China">China</a>
+            <img
+              src="/img/китайБез имени-1.png"
+              alt="China"
+              class="city_image"
+              data-id="China"
+            />
+          </li>
+          <li class="city list_item" data-id="Japan">
+            <a class="citytext" data-id="Japan">Japan</a>
+            <img
+              src="/img/японияБез имени-1.png"
+              alt="Japan"
+              class="city_image"
+              data-id="Japan"
+            />
+          </li>
+        </ul>
+      </section>
+      <div id="searchResultsMan"></div>
+      <div class="line-container2" id="tur" data-aos="fade-up">
+        <div class="line-line l-l"></div>
+        <h1 class="citytextH1">Tours</h1>
+        <div class="line-line l-r"></div>
+      </div>
+      <!-- Swiper -->
+      <div class="swiper myFirstSwiper blocks blocks_row" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide France" id="route1Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/1франция/0 — копия (1)/Palais-Garnier-Opera-Paris-1024x1024.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 5 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Paris</h3>
+                <p class="card-subtitle">Price from 500€</p>
+                <p class="card-text">
+                  Paris, the capital of France, is famous for its historical and
+                  cultural landmarks, museums, and unique atmosphere.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide France" id="route2Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/1франция/0 — копия (2)/best-villages-french-riviera.pic-1-1024x1024.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 4 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">French Riviera</h3>
+                <p class="card-subtitle">Price from 700€</p>
+                <p class="card-text">
+                  A region in southeastern France known for its beaches, luxury
+                  resorts, prestigious festivals, and warm climate.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide France" id="route3Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/1франция/0 — копия (3)/amboise-france-loire-river-ambuaz-frantsiia-reka-luara-doma.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 6 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Loire Valley</h3>
+                <p class="card-subtitle">Price from 600€</p>
+                <p class="card-text">
+                  The Loire Valley is famous for its magnificent castles,
+                  vineyards, and picturesque landscapes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide France" id="route4Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/1франция/0 — копия (4)/1649205641_63-vsegda-pomnim-com-p-provans-priroda-foto-73.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 3 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Provence</h3>
+                <p class="card-subtitle">Price from 550€</p>
+                <p class="card-text">
+                  Provence is famous for its lavender fields, historic towns,
+                  picturesque villages, and delicious cuisine.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide France" id="route5Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/1франция/0 — копия (5)/1662228968_1-priroda-club-p-frantsuzskie-alpi-krasivo-foto-1.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">В пути: 7 дней</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Альпы</h3>
+                <p class="card-subtitle">Стоимость от 800€</p>
+                <p class="card-text">
+                  Французские Альпы привлекают любителей зимних видов спорта,
+                  горных походов и живописных горных пейзажей.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- USA Tours -->
+
+          <div class="swiper-slide USA" id="route6Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/2сша/0 — копия (1)/4070a733f83e41c4b41155a5dee213a6.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 4 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">New York, New York</h3>
+                <p class="card-subtitle">Price from 500€</p>
+                <p class="card-text">
+                  Visit Times Square, Central Park, and the Empire State
+                  Building.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide USA" id="route7Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/2сша/0 — копия (2)/149081812358dc144bc62f12.90560906.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 5 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Las Vegas, Nevada</h3>
+                <p class="card-subtitle">Price from 400€</p>
+                <p class="card-text">
+                  Immerse yourself in the world of casinos, shows, and luxury on
+                  the Strip.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide USA" id="route8Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/2сша/0 — копия (3)/c75fc75a0f461a361fa7502a0fc6c01f.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 3 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Grand Canyon, Arizona</h3>
+                <p class="card-subtitle">Price from 300€</p>
+                <p class="card-text">
+                  Explore one of the natural wonders of the world with stunning
+                  views.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide USA" id="route9Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/2сша/0 — копия (4)/los-andzheles-kaliforniya-ssha.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 6 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Los Angeles, California</h3>
+                <p class="card-subtitle">Price from 450€</p>
+                <p class="card-text">
+                  Visit Hollywood, beaches, and cultural landmarks.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide USA" id="route10Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/2сша/0 — копия (5)/orlando-florida-lake-eola.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 7 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Orlando, Florida</h3>
+                <p class="card-subtitle">Price from 350€</p>
+                <p class="card-text">
+                  Enjoy theme parks like Walt Disney World and Universal
+                  Studios.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide Italy" id="route11Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/3италия/0 — копия (1)/149142790558e56241baefc7.27679747.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 5 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Rome</h3>
+                <p class="card-subtitle">Price from 500€</p>
+                <p class="card-text">
+                  The Eternal City, capital of Italy, rich in history, art, and
+                  culture. Major landmarks: Colosseum, Vatican, Roman Forum,
+                  Pantheon.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide Italy" id="route12Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/3италия/0 — копия (2)/98e592467278de98b5dc6ca8e154c57b.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 4 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Florence</h3>
+                <p class="card-subtitle">Price from 400€</p>
+                <p class="card-text">
+                  The center of the Renaissance, a city of art and architecture,
+                  known for its museums and galleries. Major landmarks: Santa
+                  Maria del Fiore Cathedral, Uffizi Gallery, Ponte Vecchio,
+                  Palazzo Vecchio.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide Italy" id="route13Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/3италия/0 — копия (1)/56b08a6bd1c0900d7c4aaf325043a491-1024x1024.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 6 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Venice</h3>
+                <p class="card-subtitle">Price from 450€</p>
+                <p class="card-text">
+                  A city on water, unique with its architecture and canal
+                  system, a romantic and picturesque place. Major landmarks: St.
+                  Mark's Square, Doge's Palace, Grand Canal, Rialto Bridge.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide Italy" id="route14Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/3италия/0 — копия (4)/Milan-Cathedral-1024x1024.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 3 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Milan</h3>
+                <p class="card-subtitle">Price from 550€</p>
+                <p class="card-text">
+                  The world capital of fashion and design, a city with a rich
+                  history and modern cultural life. Major landmarks: Milan
+                  Cathedral (Duomo), Galleria Vittorio Emanuele II, La Scala
+                  Theater, Sforza Castle.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide Italy" id="route15Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/3италия/0 — копия (5)/World___Italy_Clouds_over_the_city_of_Naples__Italy_062556_31.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 7 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Naples</h3>
+                <p class="card-subtitle">Price from 600€</p>
+                <p class="card-text">
+                  A city with a rich history, at the foot of Mount Vesuvius,
+                  near the ancient ruins of Pompeii. Major landmarks: National
+                  Archaeological Museum, Vesuvius, Pompeii, Sansevero Chapel.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide China" id="route16Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/4китай/0 — копия (1)/925fa610c1711fd.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 5 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Beijing</h3>
+                <p class="card-subtitle">Price from €600</p>
+                <p class="card-text">
+                  The capital of China with a rich history: Great Wall of China,
+                  Forbidden City, Temple of Heaven, Summer Palace.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide China" id="route17Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/4китай/0 — копия (2)/1660112058_56-kartinkin-net-p-kitai-shankhai-krasivo-foto-63.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 7 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Shanghai</h3>
+                <p class="card-subtitle">Price from €800</p>
+                <p class="card-text">
+                  The economic center of China: Bund, Oriental Pearl Tower,
+                  Shanghai Museum, French Concession.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide China" id="route18Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/4китай/0 — копия (3)/chiang-kai-shek-memorial-hall.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 4 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Xi'an</h3>
+                <p class="card-subtitle">Price from €500</p>
+                <p class="card-text">
+                  Ancient capital of China: Terracotta Army, Xi'an City Wall,
+                  Giant Wild Goose Pagoda, Shaanxi History Museum.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide China" id="route19Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/4китай/0 — копия (4)/5818f.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 3 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Guangzhou</h3>
+                <p class="card-subtitle">Price from €400</p>
+                <p class="card-text">
+                  Commercial center of China: Guangzhou Tower, Temple of the Six
+                  Banyan Trees, Yuexiu Park, Shamian Island.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide China" id="route20Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/4китай/0 — копия (5)/26870121507_1545deedfb_b.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 6 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Guilin and Yangshuo</h3>
+                <p class="card-subtitle">Price from €700</p>
+                <p class="card-text">
+                  Scenic karst landscapes: Reed Flute Cave, Elephant Trunk Hill,
+                  Seven Stars Park, Rafting on the Li River.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide Japan" id="route21Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/5япония/0 — копия (1)/japan-iaponiia-gorodskaia-ulitsa-tsvetenie-vesnoi.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 5 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Tokyo</h3>
+                <p class="card-subtitle">Price from 2000€</p>
+                <p class="card-text">
+                  Tokyo — the capital of Japan and one of the most dynamic and
+                  bustling metropolises in the world.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide Japan" id="route22Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/5япония/0 — копия (2)/mimuroto-ji-temple-kyoto-5851.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 4 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Kyoto</h3>
+                <p class="card-subtitle">Price from 1800€</p>
+                <p class="card-text">
+                  Kyoto is known for its historical and cultural monuments.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide Japan" id="route23Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/5япония/0 — копия (3)/iaponiia-gorod-osaka-peizazh-doma-neboskrioby.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 3 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Osaka</h3>
+                <p class="card-subtitle">Price from 1700€</p>
+                <p class="card-text">
+                  Osaka — a major port city, known for its lively atmosphere and
+                  culinary delights.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide Japan" id="route24Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/5япония/0 — копия (4)/18.大阪城天守閣03-1024x1024.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 6 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Hokkaido</h3>
+                <p class="card-subtitle">Price from 1900€</p>
+                <p class="card-text">
+                  Hokkaido attracts tourists with its natural beauty and ski
+                  resorts.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide Japan" id="route25Button">
+            <div class="card">
+              <div style="position: relative">
+                <img
+                  src="/image/все/5япония/0 — копия (5)/scale_1200.jpg"
+                  alt="Card image"
+                />
+                <div class="card-timer">Duration: 4 days</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Hiroshima</h3>
+                <p class="card-subtitle">Price from 1600€</p>
+                <p class="card-text">
+                  Hiroshima is known for its history and Peace Memorial Park.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="next prev">
+          <div class="swiper-button-next next"></div>
+          <div class="swiper-button-prev prev"></div>
+        </div>
+      </div>
+
+      <section id="searchResults" class="results-container"></section>
+      <div class="line-container3" id="com" data-aos="fade-up">
+        <div class="line-line l-l"></div>
+        <h1 class="citytextH1">Advantages</h1>
+        <div class="line-line l-r"></div>
+      </div>
+      <div class="container-card">
+        <div class="grid">
+          <div class="card-com" data-aos="fade-up">
+            <div class="icon">
+              <img src="/img/опыт.png" class="grid_image" />
+            </div>
+            <h2>Professional Guides</h2>
+            <p>
+              Our guides are experts with years of experience. They will share
+              unique knowledge and interesting stories, making your journey
+              truly captivating and educational.
+            </p>
+          </div>
+          <div class="card-com" data-aos="fade-up">
+            <div class="icon">
+              <img src="/img/комфорт.png" class="grid_image" />
+            </div>
+            <h2>Comfortable Accommodation</h2>
+            <p>
+              We choose only the best hotels to ensure maximum comfort and
+              convenience. All of our partners meet high standards and offer
+              modern services and amenities.
+            </p>
+          </div>
+          <div class="card-com" data-aos="fade-up">
+            <div class="icon">
+              <img src="/img/безопасность.png" class="grid_image" />
+            </div>
+            <h2>Safe Travels</h2>
+            <p>
+              The safety of our clients is our priority. We take all necessary
+              measures to ensure safety throughout the trip and provide modern
+              equipment.
+            </p>
+          </div>
+          <div class="card-com" data-aos="fade-up">
+            <div class="icon">
+              <img src="/img/цены.png" class="grid_image" />
+            </div>
+            <h2>Affordable Prices</h2>
+            <p>
+              We offer competitive prices and a flexible discount system. With
+              us, you will find tours for any budget, making travel accessible
+              and frequent.
+            </p>
+          </div>
+          <div class="card-com" data-aos="fade-up">
+            <div class="icon">
+              <img src="/img/под.png" class="grid_image" />
+            </div>
+            <h2>24/7 Support</h2>
+            <p>
+              Our support team works around the clock and is ready to assist you
+              in any situation and answer all your questions, ensuring peace of
+              mind throughout your journey.
+            </p>
+          </div>
+          <div class="card-com" data-aos="fade-up">
+            <div class="icon">
+              <img src="/img/культура.png" class="grid_image" />
+            </div>
+            <h2>Cultural Programs</h2>
+            <p>
+              Our cultural programs include museum tours, visits to historical
+              landmarks, and participation in local festivals. Immerse yourself
+              in the world of culture and history with us.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section class="sec-contact-block" id="sms">
+        <div class="line-container4" data-aos="fade-up">
+          <div class="line-line l-l"></div>
+          <h2 class="contact-text">
+            Contact us in any way that is convenient for you
+          </h2>
+          <div class="line-line l-r"></div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-info">
+            <div data-aos="fade-up">
+              <span class="contact-info-text">Contact number:</span>
+              <strong class="contact-info-text2">+X (XXX) XXX-XX-XX</strong>
+            </div>
+            <div data-aos="fade-up">
+              <span class="contact-info-text">Working hours: daily</span>
+              <strong class="contact-info-text2">from 10:00 to 20:00</strong>
+            </div>
+          </div>
+          <div class="social-media">
+            <div>
+              <span class="contact-info-text" data-aos="fade-up"
+                >Messengers:</span
+              >
+              <div class="social-icons">
+                <a href="https://youtu.be/x5HqcwD4Sxs?t=6" target="_blank">
+                  <img
+                    src="/image/telegram-app.png"
+                    alt="Telegram"
+                    data-aos="fade-up"
+                    class="social-icons-1"
+                  />
+                </a>
+                <a href="https://youtu.be/x5HqcwD4Sxs?t=6" target="_blank">
+                  <img
+                    src="/image/w-app.png"
+                    alt="WhatsApp"
+                    data-aos="fade-up"
+                    class="social-icons-1"
+                  />
+                </a>
+              </div>
+            </div>
+            <div>
+              <span class="contact-info-text" data-aos="fade-up"
+                >We are on social networks:</span
+              >
+              <div class="social-icons">
+                <a
+                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                  target="_blank"
+                >
+                  <img
+                    src="/image/you-app.png"
+                    alt="YouTube"
+                    data-aos="fade-up"
+                    class="social-icons-1"
+                  />
+                </a>
+                <a
+                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                  target="_blank"
+                >
+                  <img
+                    src="/image/in-app.png"
+                    alt="Instagram"
+                    data-aos="fade-up"
+                    class="social-icons-1"
+                  />
+                </a>
+                <a
+                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+                  target="_blank"
+                >
+                  <img
+                    src="/image/f-app.png"
+                    alt="Facebook"
+                    data-aos="fade-up"
+                    class="social-icons-1"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer data-aos="fade-up">
+        <p>© 2024 Real Estate Agency. All rights reserved.</p>
+      </footer>
+    </main>
+
+    <script src="/js/cart.js"></script>
+    <script src="/js/man.js"></script>
+    <script src="/js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/swiper.js"></script>
+    <script>
+      document.querySelector(".logo").addEventListener("click", function () {
+        location.reload();
+      });
+    </script>
+    <script src="/styles/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
