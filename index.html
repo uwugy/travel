@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tourism</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
     <link rel="stylesheet" href="/styles/aos.css" />
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
     <link rel="script" type="script/js" href="script.js" />
@@ -20,9 +27,21 @@
   </head>
   <body>
     <header>
-      <div class="header-content">
+      <div class="header-content"> <div id="menuToggle">
+        <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+      <ul id="menu">
+        <li class="li-menu"><a href="#top" class="a-menu" >Home</a></li>
+          <li class="li-menu"><a href="#city-tur" class="a-menu">Destinations</a></li>
+          <li class="li-menu"> <a href="#tur" class="a-menu">Tours</a></li>
+            <li class="li-menu"><a href="#com" class="a-menu">Advantages</a></li>
+              <li class="li-menu"><a href="#sms" class="a-menu">Contacts</a></li>
+      </ul>
+     </div>
         <div class="logo">LOGO</div>
-        <nav>
+        <nav class="pc-manu">
           <a href="#top" class="btn btn-2">Home</a>
           <a href="#city-tur" class="btn btn-2">Destinations</a>
           <a href="#tur" class="btn btn-2">Tours</a>
@@ -30,7 +49,9 @@
           <a href="#sms" class="btn btn-2">Contacts</a>
         </nav>
       </div>
+     
     </header>
+    
     <main id="top">
       <section class="toptur">
         <div>
@@ -47,6 +68,7 @@
             />
           </div>
           <div class="Guide" data-aos="fade-left">
+           
             <div class="Guidepos" id="man1Button" id="toggleButton">
               <h1 class="GuideNom">1</h1>
               <img
@@ -80,6 +102,7 @@
                 <a class="GuideDet yy">15 years of experience</a>
               </div>
             </div>
+            
             <div class="Guidepos" id="man4Button">
               <h1 class="GuideNom">4</h1>
               <img
@@ -116,11 +139,149 @@
           </div>
         </div>
       </section>
+    <section class="sec-guide-mob">
+      <div class="guide-mob">
+        <h1 class="GuidertextH1" data-aos="fade-left">Tour Guides</h1>
+      <div class="Guide" data-aos="fade-left">
+        <div class="guide-col-1">
+        <div class="Guidepos" id="man1ButtonMob" id="toggleButton">
+         
+          <img
+            class="GuideMen"
+            src="/image/191-1915006_psychotherapy-clipart-1280x1287.png"
+          />
+          <div class="GuideText">
+            <h1 class="GuideName">Ivan Petrov</h1>
+            <a class="GuideDet">10 years of experience</a>
+          </div>
+        </div>
+        <div class="Guidepos" id="man2ButtonMob">
+          
+          <img
+            class="GuideMen"
+            src="/image/191-1915006_psychotherapy-clipart-1280x1287.png"
+          />
+          <div class="GuideText">
+            <h1 class="GuideName">Anna Smirnova</h1>
+            <a class="GuideDet yy">5 years of experience</a>
+          </div>
+        </div></div>
+        <div class="guide-col-2">
+        <div class="Guidepos" id="man3ButtonMob">
+         
+          <img
+            class="GuideMen"
+            src="/image/191-1915006_psychotherapy-clipart-1280x1287.png"
+          />
+          <div class="GuideText">
+            <h1 class="GuideName">Dmitry Ivanov</h1>
+            <a class="GuideDet yy">15 years of experience</a>
+          </div>
+        </div>
+      
+       
+        <div class="Guidepos" id="man4ButtonMob">
+          
+          <img
+            class="GuideMen"
+            src="/image/191-1915006_psychotherapy-clipart-1280x1287.png"
+          />
+          <div class="GuideText">
+            <h1 class="GuideName">Elena Vasilieva</h1>
+            <a class="GuideDet yy">7 years of experience</a>
+          </div></div>
+        </div><div class="guide-col-3">
+        <div class="Guidepos" id="man5ButtonMob">
+          
+          <img
+            class="GuideMen"
+            src="/image/191-1915006_psychotherapy-clipart-1280x1287.png"
+          />
+          <div class="GuideText">
+            <h1 class="GuideName">Mikhail Kuznetsov</h1>
+            <a class="GuideDet yy">12 years of experience</a>
+          </div>
+        </div>
+        <div class="Guidepos" id="man6ButtonMob">
+         
+          <img
+            class="GuideMen"
+            src="/image/191-1915006_psychotherapy-clipart-1280x1287.png"
+          />
+          <div class="GuideText">
+            <h1 class="GuideName">Olga Sokolova</h1>
+            <a class="GuideDet">8 years of experience</a>
+          </div>
+        </div></div>
+      </div></div> </section>
       <div class="line-container" id="city-tur" data-aos="fade-up">
         <div class="line-line l-l"></div>
         <h1 class="citytextH1">Destinations</h1>
         <div class="line-line l-r"></div>
       </div>
+      <section class="topcity-mob" data-aos="fade-up">
+        <ul class="list">
+          <div class="topcity-mob-list
+          ">
+          <div class="city-mob-1">
+          <li class="city list_item" data-id="all">
+            <a class="citytext" data-id="all">All</a>
+            <img
+              src="/img/мирБез имени-1.png"
+              alt="All"
+              class="city_image"
+              data-id="all"
+            />
+          </li>
+          <li class="city list_item" data-id="France">
+            <a class="citytext" data-id="France">France</a>
+            <img
+              src="/img/францияБез имени-1.png"
+              alt="France"
+              class="city_image"
+              data-id="France"
+            />
+          </li>
+          <li class="city list_item" data-id="USA">
+            <a class="citytext" data-id="USA">USA</a>
+            <img
+              src="/img/сшаБез имени-1.png"
+              alt="USA"
+              class="city_image"
+              data-id="USA"
+            />
+          </li>
+        </div>
+        <div class="city-mob-2">
+          <li class="city list_item" data-id="Italy">
+            <a class="citytext" data-id="Italy">Italy</a>
+            <img
+              src="/img/италияБез имени-1.png"
+              alt="Italy"
+              class="city_image"
+              data-id="Italy"
+            />
+          </li>
+          <li class="city list_item" data-id="China">
+            <a class="citytext" data-id="China">China</a>
+            <img
+              src="/img/китайБез имени-1.png"
+              alt="China"
+              class="city_image"
+              data-id="China"
+            />
+          </li>
+          <li class="city list_item" data-id="Japan">
+            <a class="citytext" data-id="Japan">Japan</a>
+            <img
+              src="/img/японияБез имени-1.png"
+              alt="Japan"
+              class="city_image"
+              data-id="Japan"
+            />
+          </li></div></div>
+        </ul>
+      </section>
       <section class="topcity" data-aos="fade-up">
         <ul class="list">
           <li class="city list_item" data-id="all">
@@ -862,9 +1023,65 @@
           </div>
         </div>
       </section>
-      <footer data-aos="fade-up">
-        <p>© 2024 Real Estate Agency. All rights reserved.</p>
-      </footer>
+     
+      <footer>
+        <div class="f-item-con">
+          <div class="app-info">
+            <span class="app-name">
+              <span class="app-initial">LOGO
+            <p>
+              We offer you carefully selected and unforgettable travel packages.
+            </p>
+          </div>
+          <div class="useful-links">
+            <div class="footer-title">Useful Links</div>
+            <ul>
+             
+              <li>Terms and Conditions</li>
+              <li>Advertising Offers</li>
+              <li>Become a Partner</li>
+              <li>About Us</li>
+              <li>Tours</li>
+            </ul>
+          </div>
+          <div class="help-sec">
+            <div class="footer-title">Help</div>
+            <ul>
+              <li>Report a Issue / Bug</li> 
+               <li>Feedback</li>
+               <li>Help Me</li>
+              
+            </ul>
+          </div>
+          <div class="g-i-t">
+            <div class="footer-title">Get in Touch</div>
+            <form action="/" method="post" class="space-y-2">
+              <input
+                type="text"
+                name="g-name"
+                class="g-inp"
+                id="g-name"
+                placeholder="Name"
+              />
+              <input
+                type="email"
+                name="g-email"
+                class="g-inp"
+                id="g-email"
+                placeholder="Email"
+              />
+              <textarea
+                type="text"
+                name="g-msg"
+                class="g-inp h-40 resize-none"
+                id="g-msg"
+                placeholder="Message..."
+              ></textarea>
+              <button type="submit" class="f-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+           </footer>
     </main>
 
     <script src="/js/cart.js"></script>

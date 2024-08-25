@@ -6,6 +6,8 @@ body {
   background-color: #1a1a24;
   /* overflow-x: hidden; */
   scroll-behavior: smooth;
+  max-width: 1600px; /* Максимальная ширина контейнера */
+  margin: 0 auto;
 }
 html {
   margin: 0;
@@ -48,6 +50,7 @@ main {
 
 header {
   width: 100%;
+  max-width: 1600px;
   color: white;
   background-color: #252434;
   position: fixed;
@@ -108,7 +111,8 @@ li {
   /*  position: relative; */
   /* left: 8.8%; */
   /* width: 100%; */
-  height: 100%;
+  height: 66vh;
+  max-height: 100%;
   width: auto;
   /* top: 3vh; */
 }
@@ -194,8 +198,11 @@ li {
   /* right: -69.7%; */
   background-color: #16161f; /* #16161f */
   /* right: 13.9%; */
-  width: 100%;
-  height: 95%;
+
+  width: 39vh;
+  max-width: 100%;
+  height: 63vh;
+  max-height: 100%;
   padding: 8px;
   border-radius: 10px;
   margin-left: 10px;
@@ -276,6 +283,7 @@ li {
   margin: 20px 0;
   position: relative;
   /* top: -450px; */
+  padding: 10px;
 }
 /* top-0001 */
 .line-container2 {
@@ -285,6 +293,7 @@ li {
   margin: 20px 0;
   position: relative;
   /*  top: -450px; */
+  padding: 10px;
 }
 
 .line-container3 {
@@ -294,6 +303,7 @@ li {
   margin: 20px 0;
   position: relative;
   /* top: -410px; */
+  padding-bottom: 10px;
 }
 
 .line-container4 {
@@ -303,6 +313,7 @@ li {
   margin: 20px 0;
   position: relative;
   /* top: 0px; */
+  padding: 10px;
 }
 
 .line-line {
@@ -349,14 +360,19 @@ li {
 
 .city {
   background-color: #252434;
-  width: 110%;
+
   cursor: pointer;
-  margin: 10px;
+
   border-radius: 10px;
+  width: 40vh;
   aspect-ratio: 1;
   position: relative;
   /* top: -79px; */
   transition: transform 0.3s ease-in-out;
+  max-width: 210%;
+  aspect-ratio: 1;
+  margin: 0 auto 0 20px;
+  right: 11px;
 }
 
 .city:hover {
@@ -367,11 +383,38 @@ li {
   padding: 5px;
   display: flex;
   position: relative;
-  top: 75%;
+  top: 70%;
   font-size: 30px;
   color: #ffffff;
   text-align: center;
   justify-content: center;
+}
+
+.topcity-mob {
+  display: none;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+
+  /* top: -260px; */
+}
+.topcity-mob-list {
+  /* display: flex;
+  flex-direction: row; */
+  margin: 0 auto;
+  position: relative;
+  right: 50px;
+}
+
+.city-mob-1 {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+.city-mob-2 {
+  display: flex;
+  flex-direction: row;
 }
 /* top-0001 */
 .swiper {
@@ -379,6 +422,7 @@ li {
   height: 100%;
   position: relative;
   /* top: -440px; */
+  margin-bottom: 5px;
 }
 
 .swiper-slide {
@@ -387,11 +431,13 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 0%;
 }
 
 .card {
-  width: 90%;
-  height: auto;
+  width: 95%;
+
+  height: 90%;
   cursor: pointer;
   background-color: #252434;
   border-radius: 10px;
@@ -415,6 +461,7 @@ li {
 .card img {
   width: 100%;
   height: auto;
+  max-width: 400px;
 }
 
 .card-content {
@@ -624,7 +671,9 @@ p {
 .card-man {
   display: flex;
   width: 80%;
+  max-width: 1800px;
   height: 55%;
+  max-height: 500px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -759,7 +808,17 @@ p {
   width: 100%;
   height: 1px;
 }
+.li-menu {
+  background: linear-gradient(to right, #bb1aa6, #74089a);
+  text-align: center;
+  border-radius: 5px;
+  margin: 5px;
+}
 
+.a-menu {
+  color: white;
+  text-decoration: none;
+}
 @media (min-width: 600px) {
   .btn {
     margin: 0 1em 2em;
@@ -810,15 +869,366 @@ p {
   width: 80%;
 }
 
-footer {
+/* footer {
   background: #252434;
-
+  height: 100px;
   color: #fff;
   text-align: center;
   padding: 1rem;
 }
+ */
+
+.guide-mob {
+  /*  display: none; */
+
+  display: flex;
+  flex-direction: column;
+  display: none;
+  max-width: 900px;
+}
+.guide-mob > .Guide {
+  /*  position: relative; */
+
+  /* right: -69.7%; */
+  background-color: #16161f; /* #16161f */
+  /* right: 13.9%; */
+
+  width: 84.5%;
+  max-width: 10;
+  height: 37vh;
+  max-height: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  /*  top: 3.1vh; */
+}
+.guide-mob > .GuidertextH1 {
+  position: relative;
+  left: 28vh;
+  color: #ffffff;
+  width: 40%;
+  top: 0;
+  right: 0;
+  margin: 0 auto;
+}
+/* .Guide {
+  width: 20%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+} */
+.guide-col-1.guide-col-2.guide-col-3 {
+  width: 10%;
+}
+.guide-col-1 > .Guidepos {
+  display: flex;
+  flex-direction: row;
+  background-color: #252434;
+  width: 53.8vh;
+  max-width: 540px;
+  height: 45%;
+  margin: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.guide-col-2 > .Guidepos {
+  display: flex;
+  flex-direction: row;
+  background-color: #252434;
+  width: 53.8vh;
+  max-width: 540px;
+  height: 45%;
+  margin: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.guide-col-3 > .Guidepos {
+  display: flex;
+  flex-direction: row;
+  background-color: #252434;
+  width: 53.8vh;
+  max-width: 540px;
+  height: 45%;
+  margin: 8px;
+
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+/* .Guidepos {
+  width: 95%;
+} */
+
+.guide-mob > .Guidepos:hover {
+  transform: scale(1.05);
+}
+
+.guide-mob > .GuideNom {
+  font-size: 40px;
+  position: relative;
+  top: -27px;
+  left: 5px;
+  color: #ffffff;
+}
+
+.guide-mob > .GuideMen {
+  padding: 10px;
+  height: 40px;
+}
+
+.guide-mob > .GuideName {
+  font-size: 20px;
+  white-space: nowrap;
+  position: relative;
+  top: -4px;
+  color: #ffffff;
+}
+.guide-mob > .GuideText {
+  display: flex;
+  flex-direction: column;
+}
+.guide-mob > .GuideDet {
+  white-space: nowrap;
+  position: relative;
+  top: -20px;
+  display: flex;
+
+  color: #ffffff;
+}
+
+/* .yy {
+  position: relative;
+  right: 70px;
+} */
+
+.guide-mob > .GuideNameDet {
+  display: flex;
+  flex-direction: row;
+}
+
+#menuToggle {
+  display: none;
+}
+:root {
+  --theme-col: #bb1aa6;
+}
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+footer {
+  background-color: #12111a;
+}
+.f-item-con {
+  padding: 1.5rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 2rem;
+}
+footer .app-name {
+  color: white;
+  border-left: 4px solid var(--theme-col);
+  padding-left: 1.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+.app-name .app-initial {
+  color: white;
+}
+footer .app-info p {
+  color: white;
+  padding-left: 1.65rem;
+}
+
+footer .footer-title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: white;
+  border-left: 4px solid var(--theme-col);
+  padding-left: 1.5rem;
+  height: fit-content;
+}
+footer ul {
+  padding-left: 1.75rem;
+  color: white;
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.25rem;
+  margin-top: 0.5rem;
+}
+footer ul li {
+  margin: 0.25rem 0;
+  cursor: pointer;
+  color: #d4d4d4;
+  width: fit-content;
+}
+footer ul li:hover {
+  color: white;
+}
+footer .help-sec {
+  grid-column-start: 2;
+}
+footer .cr-con {
+  background-color: #232127;
+  color: white;
+  padding: 1rem 4rem;
+  text-align: center;
+}
+.g-i-t {
+  display: grid;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.g-i-t form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+form .g-inp {
+  padding: 0.25rem 0.5rem;
+  font-size: 16px;
+}
+.g-inp textarea {
+  height: 150px;
+}
+.f-btn {
+  padding: 0.25rem 1rem;
+  background-color: var(--theme-col);
+  border-radius: 0.25rem;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+}
 
 @media (max-width: 900px) and (min-width: 600px) {
+  .pc-manu {
+    display: none;
+  }
+  #menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle input {
+    display: flex;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  #menuToggle span {
+    display: flex;
+    width: 29px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+    background: linear-gradient(to right, #bb1aa6, #74089a);
+    /* background: #36383f; */
+  }
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+    background: linear-gradient(to right, #bb1aa6, #74089a);
+  }
+
+  #menu {
+    position: absolute;
+    width: 180px;
+    height: 400px;
+    /*  box-shadow: 0 0 10px #85888c; */
+    margin: -50px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background-color: #12111a;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  #menu li {
+    padding: 10px 0;
+    transition-delay: 2s;
+  }
+
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+
+  .card-com {
+    width: 360px;
+  }
+  .topcity {
+    display: none;
+  }
+  .topcity-mob {
+    display: flex;
+  }
+  .guide-mob {
+    display: block;
+  }
+  .imgtop {
+    /*  border-radius: 10px; */
+    /*  position: relative; */
+    /* left: 8.8%; */
+    /* width: 100%; */
+    height: 70%;
+    width: auto;
+    margin: 0 auto;
+    /* top: 3vh; */
+  }
+  .Guide {
+    display: none;
+  }
+  .guide-mob > .GuidertextH1 {
+    display: block;
+  }
+  .GuidertextH1 {
+    display: none;
+  }
   .contact-info-text,
   .route-title,
   .card-title,
@@ -858,6 +1268,123 @@ footer {
 }
 
 @media (max-width: 599px) {
+  .card-com {
+    width: 360px;
+  }
+  .topcity {
+    display: none;
+  }
+  .topcity-mob {
+    display: flex;
+  }
+  .guide-mob {
+    display: block;
+  }
+  .imgtop {
+    /*  border-radius: 10px; */
+    /*  position: relative; */
+    /* left: 8.8%; */
+    /* width: 100%; */
+    height: 70%;
+    width: auto;
+    margin: 0 auto;
+    /* top: 3vh; */
+  }
+  .Guide {
+    display: none;
+  }
+  .guide-mob > .GuidertextH1 {
+    display: block;
+  }
+  .GuidertextH1 {
+    display: none;
+  }
+  .pc-manu {
+    display: none;
+  }
+  #menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle input {
+    display: flex;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  #menuToggle span {
+    display: flex;
+    width: 29px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+    background: linear-gradient(to right, #bb1aa6, #74089a);
+    /* background: #36383f; */
+  }
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+    background: linear-gradient(to right, #bb1aa6, #74089a);
+  }
+
+  #menu {
+    position: absolute;
+    width: 180px;
+    height: 400px;
+    /*  box-shadow: 0 0 10px #85888c; */
+    margin: -50px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background-color: #12111a;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  #menu li {
+    padding: 10px 0;
+    transition-delay: 2s;
+  }
+
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+
   .contact-info-text,
   .route-title,
   .card-title,

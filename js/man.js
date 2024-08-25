@@ -111,3 +111,25 @@ document.getElementById("man5Button").addEventListener("click", function () {
 document.getElementById("man6Button").addEventListener("click", function () {
   displayManResultsById("man6");
 });
+
+document.getElementById("man1ButtonMob").addEventListener("click", function () {
+  displayManResultsById("man1");
+});
+
+document.getElementById("man2ButtonMob").addEventListener("click", function () {
+  displayManResultsById("man2");
+});
+
+document.getElementById("man3ButtonMob").addEventListener("click", function () {
+  displayManResultsById("man3");
+});
+
+document.getElementById("man4ButtonMob").addEventListener("click", function () {
+  displayManResultsById("man4");
+});
+document.getElementById("man5ButtonMob").addEventListener("click", function () {
+  displayManResultsById("man5");
+});
+document.getElementById("man6ButtonMob").addEventListener("click", function () {
+  displayManResultsById("man6");
+});
